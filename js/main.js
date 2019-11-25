@@ -106,23 +106,4 @@ $(document).ready(function() {
         duration: 1000,
         once: true,
     });
-
-});
-
-// anchor animation
-$(window).bind('load', function() {
-    "use strict";
-    $(function() {
-        $('a[href^="#"]').click(function() {
-            if ($($(this).attr('href')).length) {
-                var p = $($(this).attr('href')).offset();
-                if ($(window).width() > 769) {
-                    $('html,body').animate({ scrollTop: p.top - 80 }, 400);
-                } else {
-                    $('html,body').animate({ scrollTop: p.top - 80 }, 400);
-                }
-            }
-            return false;
-        });
-    });
 });

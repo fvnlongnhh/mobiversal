@@ -22,4 +22,14 @@ $(document).ready(function() {
             return false;
         });
     }
+
+    $('.service_link ul li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('.service_link ul li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
 });

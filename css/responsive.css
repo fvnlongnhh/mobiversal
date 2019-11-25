@@ -18,6 +18,9 @@ nav ul li a:hover::before{opacity: 1;}
 .box03 .box03_list ul li:hover{border:1px solid #ffd200;box-shadow: 0px 8px 21px 8px rgba(6,6,6,0.08);filter: grayscale(0)}
 .box04 .box04_img ul li:hover{filter: grayscale(0)}
 
+.service_link ul li:hover span{color: #000}
+.service_link ul li:hover img{filter: grayscale(0)}
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -96,13 +99,14 @@ nav ul li a:hover::before{opacity: 1;}
     /*==========================================================================*/
     /*                               ALL                                        */
     /*==========================================================================*/
+    header.active{background: rgba(0, 0, 0, 0.2)}
     nav{height: 60px;display: flex;align-items: center;}
     nav ul{position: fixed;top: 100px;left: 0;opacity: 0;visibility: hidden;width: 100%;height: calc(100vh - 60px);background: rgba(255,255,255,0.9);transition: all ease 0.5s;display: flex;flex-direction: column;z-index: -1;justify-content: flex-start}
     nav ul li{margin: 0 auto;width: 100%;text-align: center;border-bottom: 1px solid #ededed}
     nav ul.active{top: 60px;opacity: 1;visibility: visible;z-index: 10;}
 
     .btn a{font-size: 16px;}
-
+    .ttl p{font-size: 20px;}
 
     /*==========================================================================*/
     /*                               MAIN                                       */
@@ -128,6 +132,7 @@ nav ul li a:hover::before{opacity: 1;}
 
     .box04{margin:50px 0 200px;}
     .box04 .ttl h3{top: -30px}
+    .box04 .box04_txt ul li .big{font-size: 20px;}
     .box04 .box04_txt ul li .comment{font-size: 16px;}
     
     .box05{min-height: inherit;margin-bottom: 50px}
@@ -139,6 +144,24 @@ nav ul li a:hover::before{opacity: 1;}
     footer .foot_info address{text-align: center;}
     footer .foot_link ul{display: none;}
     footer .foot_link p{text-align: center;margin-bottom: 30px}
+
+    
+    /*==========================================================================*/
+    /*                              CHILD PAGE                                  */
+    /*==========================================================================*/
+    .under .box04{margin: 100px auto 200px;}
+
+    #top_info{background: url('../images/top_info_bg.png') top center no-repeat;background-size: contain;padding: 100px 0 50px;}
+    #top_info h2{font-size: 36px;margin: 15px auto 0}
+    #top_info p{width: 100%;font-size: 18px;}
+
+
+    /* SERVICES PAGE */
+    .service_tab .tab-content{width: 100%;padding-top: 20px}
+    .service_tab .tab-content p{font-size: 16px;}
+    .service_link ul{flex-wrap: wrap;padding-bottom: 15px;margin-bottom: 30px;}
+    .service_link ul li{width:calc((100vw - 80px) / 3);margin-bottom: 15px;}
+    .service_link ul li::before{display: none;}
 
 }
 
@@ -161,10 +184,15 @@ nav ul li a:hover::before{opacity: 1;}
     .box05 .box05_chat{right: 40px}
     .box05 .box05_accept{left: 40px;top: 170px}
     .box05 .box05_ct{padding-top: 320px}
+
+    .service_link ul li img{width: 100px;}
+    .service_link ul li span{font-size: 16px;min-height: 50px;}
 }
 
 @media screen and (max-width: 380px) {
     .btn{padding: 0;width: 100%;box-sizing: border-box}
+    .service_link ul li{width: calc((100vw - 60px) / 3)}
+    .service_link ul li span{font-size: 14px;line-height: 1.3em;min-height: 40px;bottom: -5px;}
 }
 
 @media screen and (max-width: 360px) {

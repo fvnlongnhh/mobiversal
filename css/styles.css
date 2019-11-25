@@ -201,7 +201,7 @@ nav ul li a::before{position: absolute;bottom: -2px;left: 0;background: #000;hei
 .box05 .btn a{background: transparent}
 
 /*==========================================================================*/
-/*                              footer                                     */
+/*                              footer                                      */
 /*==========================================================================*/
 footer{position: relative; z-index: 4;}
 footer .inner{border-top: 1px solid #ccc;display: flex;padding: 100px 0 100px;display: flex;justify-content: space-between;}
@@ -219,6 +219,55 @@ footer .foot_link p a:hover img{filter: grayscale(0)}
 footer .foot_info{width: 300px;display: flex;justify-content: flex-end;flex-direction: column;align-items: flex-end}
 footer .foot_info p{width: 150px;margin-bottom: 10px}
 footer .foot_info address{font-size: 14px;text-align: right;line-height: 1.5em}
+
+
+/*==========================================================================*/
+/*                              CHILD PAGE                                  */
+/*==========================================================================*/
+.under{}
+.under #main{margin-top: 0;}
+.under .box04{margin: 150px auto 200px;}
+
+/* TOP INFO */
+#top_info{text-align: center;color: #000;background: url('../images/top_info_bg.png') top center no-repeat;padding: 200px 0 50px;margin-bottom: 50px}
+#top_info h2{font-size: 52px;font-weight: bold;position: relative;padding-top: 15px;margin: 30px auto 15px;text-transform: capitalize;}
+#top_info h2::before{width: 50px;height: 4px;background: #000;position: absolute;top: 0;left: calc(50% - 25px);content: '';}
+#top_info p{font-size: 20px;margin:0 auto;width: 800px;}
+
+/* SERVICES PAGE */
+.service_link{}
+.service_link ul{display: flex;justify-content: space-between;padding-bottom: 30px;margin-bottom: 50px;border-bottom: 1px solid  #ededed;}
+.service_link ul li{width: 180px;position: relative;text-align: center;padding-bottom: 10px;cursor: pointer;}
+.service_link ul li::before{width: 60px;height: 3px;position: absolute;bottom: -32px;left: calc(50% - 30px);content: '';opacity: 0;background: #000}
+.service_link ul li img{filter: grayscale(1);transition: all ease 0.3s;}
+.service_link ul li span{font-size: 18px;display: block;text-align: center;font-weight: 300;color: #8a8989;transition: all ease 0.3s;position: absolute;bottom: 0;left: 0;width: 100%;min-height: 42px;letter-spacing: 0.05em}
+.service_link ul li.current::before{opacity: 1;}
+.service_link ul li.current img{filter: grayscale(0)}
+.service_link ul li.current span{color: #000}
+
+.service_tab{}
+.service_tab .tab-content{height: 0;opacity: 0;visibility: hidden;width: 100%;position: absolute;top: 0;left: 0;transition: all ease 0.5s;padding-top: 40px;width: 800px;margin: 0 auto;}
+.service_tab .tab-content p{font-size: 18px;}
+.service_tab .tab-content.current::before{background: url('../images/service_txt_ic.png') center no-repeat;background-size: cover;width: 115px;height: 12px;position: absolute;top: 0;left: 0;content: '';}
+.service_tab .tab-content.current{height: auto;opacity: 1;visibility: visible;position: relative;top: inherit;left: inherit;}
+
+/* ABOUT PAGE */
+.about_value{}
+.about_value ul{display: flex;justify-content: space-between;align-items: flex-start}
+.about_value ul li{width: 240px;padding-top: 160px;position: relative;text-align: center;}
+.about_value ul li.ic1{background: url('../images/about_ic_1.png') top center no-repeat #f9f9f9;}
+.about_value ul li.ic2{background: url('../images/about_ic_2.png') top center no-repeat #f9f9f9;}
+.about_value ul li.ic3{background: url('../images/about_ic_3.png') top center no-repeat #f9f9f9;}
+.about_value ul li.ic4{background: url('../images/about_ic_4.png') top center no-repeat #f9f9f9;background-position: 0px -27px}
+.about_value ul li p{margin-bottom: 0;color: #8a8989;font-size: 18px;}
+.about_value ul li .big{color: #000;font-size: 20px;margin-bottom: 15px;}
+
+.about_team{}
+
+
+/* ALL LAST CHILD */
+#top_info p:last-child{margin-bottom: 0}
+
 
 /* FIREFOX CSS */
 @supports (-moz-appearance:none) and (-webkit-appearance:none)
