@@ -158,19 +158,18 @@ nav ul li a:hover::before{opacity: 1;}
     /*==========================================================================*/
     .under .box04{margin: 100px auto 200px;}
     .under .title{margin-bottom: 30px;}
-    .under .title h3{font-size: 30px;}
+    .under .title h3{font-size: 24px;}
 
-    #top_info{background: url('../images/top_info_bg.png') top center no-repeat;background-size: contain;padding: 100px 0 50px;}
-    #top_info h2{font-size: 36px;margin: 15px auto 0}
+    #top_info{background: url('../images/top_info_bg.png') top center no-repeat;background-size: contain;padding: 100px 0 50px;margin-bottom: 0}
+    #top_info h2{font-size: 36px;margin: 15px auto;line-height: 1.3em}
     #top_info p{width: 100%;font-size: 16px;}
-
 
     /* SERVICES PAGE */
     .service_tab .tab-content{width: 100%;padding-top: 20px}
     .service_tab .tab-content p{font-size: 16px;}
     .service_link ul{flex-wrap: wrap;padding-bottom: 15px;margin-bottom: 30px;}
     .service_link ul li{width:calc((100vw - 80px) / 3);margin-bottom: 15px;}
-    .service_link ul li::before{display: none;}
+    .service_link ul li::before{display: none;}`
     .service_link ul li span{font-size: 16px;min-height: 50px;}
     
     /* ABOUT PAGE */
@@ -180,14 +179,12 @@ nav ul li a:hover::before{opacity: 1;}
     .about_value ul li::before{width: 240px;left: calc(50% - 120px)}
     .about_value ul li p{font-size: 16px;}
     .about_value ul li .big{margin-bottom: 0}
-
     .about_team{margin: 0 auto;}
     .about_team ul{justify-content: space-between;}
     .about_team ul li{width: 48%}
     .about_team ul li .about_img{margin-bottom: 5px;}
     .about_team ul li .about_txt .name{font-size: 20px;margin-bottom: 0}
     .about_team ul li .about_txt .office{font-size: 16px;}
-
     .about_mail .inner{margin: 50px auto 100px;padding: 180px 0 50px}
 
     /* JOIN US PAGE */
@@ -223,6 +220,22 @@ nav ul li a:hover::before{opacity: 1;}
     .contact_info .title p{font-size: 20px;}
     .contact_info p{font-size: 16px;}
 
+    /* WORK PAGE */
+    .work_temp .inner{padding: 50px 15px;flex-direction: column;}
+    .work_temp .work_temp_txt{width: 100%;order: 1;text-align: center;}
+    .work_temp .work_temp_txt .big{font-size: 30px;}
+    .work_temp .work_temp_txt p{font-size: 16px;}
+    .work_temp .work_temp_txt .btn{margin: 0 auto;}
+    .work_temp .work_temp_img,
+    .work_temp.bg2 .work_temp_img,
+    .work_temp.bg3 .work_temp_img{position: relative;top: inherit;right: inherit;left: inherit;width: 290px;display: flex;justify-content: center;align-items: center;order: 2;margin: 15px auto 0;}
+    .work_temp.bg5 .work_temp_img{width: 80%;}
+    .work_temp.bg6{margin-bottom: 100px}
+    .work_other{margin-top: 40px;}
+    .work_other .title p{font-size: 18px;}
+    .work_other_list{margin-top: 0}
+    .work_other_list ul li{width: 25%}
+
 
 }
 
@@ -251,6 +264,8 @@ nav ul li a:hover::before{opacity: 1;}
     .service_link ul li img{width: 100px;}
 
     .about_team ul li{width: 100%}
+    .work_temp.bg5 .work_temp_img{width: 100%;}
+    .work_other_list ul li{width: calc(100% / 3)}
 }
 
 @media screen and (max-width: 380px) {
