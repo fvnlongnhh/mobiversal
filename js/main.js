@@ -105,5 +105,24 @@ $(document).ready(function() {
     AOS.init({
         duration: 1000,
         once: true,
+        disable : 'mobile',
     });
+});
+
+$(window).bind('load',function(){
+  "use strict";
+  $(function(){
+    $('a[href^="#"]').click(function(){
+      if ($($(this).attr('href') ).length ) {
+        var p = $( $(this).attr('href') ).offset();
+        if($(window).width() > 640){
+          $('html,body').animate({ scrollTop: p.top - 100}, 400);
+        }
+        else {
+          $('html,body').animate({ scrollTop: p.top - 100}, 400);
+        }
+      }
+      return false;
+    });
+  });
 });
