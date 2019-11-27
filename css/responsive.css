@@ -236,7 +236,69 @@ nav ul li a:hover::before{opacity: 1;}
     .work_other_list{margin-top: 0}
     .work_other_list ul li{width: 25%}
 
+    /* WORK MORE */
+    .ttl_center{position: relative;top: inherit;left: inherit}
+    .ttl_center h3{font-size: 10vw;line-height: 1em;}
 
+    .work_col{}
+    .work_col .inner{flex-direction: column;}
+    .work_col .work_col_txt{width: 100%;text-align: center;margin-bottom: 30px}
+    .work_col .work_col_txt .ic{transform: none;}
+    .work_col .work_col_txt .big{font-size: 24px}
+    .work_col .work_col_txt .big::before{left: calc(50% - 25px)}
+    .work_col .work_col_txt p{font-size: 16px;color: #000}
+    .work_col .work_col_txt p:last-child{margin-bottom: 0}
+    .work_col .work_col_img{width: 400px;margin: 0 auto;text-align: center;transform: none;}
+    .work_col .app_download{justify-content: center;}
+    .work_col .ttl_center{top: 0}
+
+    .work_client .work_col_txt{padding-top: 0;margin-bottom: 0;transform: translateY(-30px)}
+    .work_client .work_col_img{transform: none;}
+
+    .work_intro{background: url('../images/work_staff_bg1.png') no-repeat;background-position: 90% 100%}
+    .work_client{background: url('../images/work_staff_bg2.png') no-repeat;background-position: 20% 30%;transform: none;margin-bottom: 50px;padding: 100px 0 0;}
+    
+    #premise .work_intro{background: url('../images/work_premise_bg1.png') no-repeat;background-position: 90% 100%}
+    #premise .work_client{background: url('../images/work_premise_bg2.png') no-repeat;background-position: 20% 30%;}
+    #pinthub .work_intro{background: url('../images/work_pinthub_bg1.png') no-repeat;background-position: 90% 100%}
+    #pinthub .work_client{background: url('../images/work_pinthub_bg2.png') no-repeat;background-position: 20% 30%;}
+    #fishpointer .work_intro{background: url('../images/work_fish_bg1.png') no-repeat;background-position: 90% 100%}
+    #fishpointer .work_client{background: url('../images/work_fish_bg2.png') no-repeat;background-position: 20% 30%;}
+    #space .work_intro{background: url('../images/work_space_bg1.png') no-repeat;background-position: 90% 100%}
+    #space .work_client{background: url('../images/work_space_bg2.png') no-repeat;background-position: 20% 30%;}
+    #appoint .work_intro{background: url('../images/work_appoint_bg1.png') no-repeat;background-position: 90% 100%}
+    #appoint .work_client{background: url('../images/work_appoint_bg2.png') no-repeat;background-position: 20% 30%;}
+
+    .work_service{padding: 0}
+    .work_service .ttl_center{top: inherit}
+    .work_service ul{transform: translateY(-20px)}
+    .work_service ul li{width: 22%;margin:0 4% 30px 0}`
+    .work_service ul li:nth-last-child(2){margin-bottom:0;}
+    .work_service ul li:last-child{margin:0;}
+
+    .work_img_app{margin: 0 0 100px;padding-top: 0}
+    .work_img_app ul{margin-top: 0}
+
+    .work_challenge{padding: 0;width: calc(100% - 30px);margin: 0 auto 50px}
+    .work_challenge .ttl_center{top: inherit;margin-bottom: 30px}
+    .work_challenge .inner{padding: 80px 15px 30px;width: calc(100% - 30px);margin: 0 auto;}
+    .work_challenge .inner::before{width: 100px;height: 100px;background-size: cover;top: -40px;left: calc(50% - 150px)}
+    .work_challenge .name{font-size: 18px;}
+    .work_challenge p{font-size: 14px;}
+
+    .work_comment{padding: 0;margin-bottom: 50px}
+    .work_comment .ttl_center{top: 15px}
+    .work_comment .inner{width: calc(100% - 30px);margin: 0 auto;}
+    .work_comment .inner::before{width: 100px;height: 86px;background-size: cover;left: calc(50% - 150px);top: 10px;}
+    .work_comment .avatar{margin-bottom: 0}
+    .work_comment p{font-size: 14px}
+    .work_comment .big{font-size: 18px;}
+    
+    .work_challenge.fish_ic .inner::before,
+    .work_challenge.appoint_ic .inner::before,
+    .work_comment.premise_ic .inner::before,
+    .work_comment.pinthub_ic .inner::before,
+    .work_comment.fish_ic .inner::before{background-size: cover;}
 }
 
 @media screen and (max-width: 560px) {
@@ -246,6 +308,10 @@ nav ul li a:hover::before{opacity: 1;}
 }
 
 @media screen and (max-width: 480px) {
+    .work_service ul{}
+    .work_service ul li{width: 48%;margin-right: 4%}
+    .work_service ul li:nth-child(2n + 2),
+    .work_service ul li:last-child{margin-right: 0}
 }
 
 @media screen and (max-width: 420px) {
@@ -264,8 +330,13 @@ nav ul li a:hover::before{opacity: 1;}
     .service_link ul li img{width: 100px;}
 
     .about_team ul li{width: 100%}
+
+    /* WORK PAGES */
+    .ttl_center h3{font-size: 15vw;}
+
     .work_temp.bg5 .work_temp_img{width: 100%;}
     .work_other_list ul li{width: calc(100% / 3)}
+    .work_col .work_col_img{width: 290px}
 }
 
 @media screen and (max-width: 380px) {

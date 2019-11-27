@@ -41,7 +41,7 @@
                 <div class="inner">
                     <p data-aos="fade"><img src="./images/work_icon.png" alt="Featured client projects"></p>
                     <h2 data-aos="fade-up" data-aos-delay="300">Featured client projects</h2>
-                    <p data-aos="fade-up" data-aos-delay="500">We know how to build products that can scale to your business' needs, regardless if<br class="box_pc"> you're a startup, an enterprise, or a governmental organization.</a></p>
+                    <p data-aos="fade-up" data-aos-delay="500">We know how to build products that can scale to your business' needs, regardless if<br>you're a startup, an enterprise, or a governmental organization.</a></p>
                 </div>
             </div>
 
@@ -127,18 +127,21 @@
                     </div>
                     <div class="work_other_list">
                         <ul>
-                            <li><img src="./images/work_logo_1.png" alt=""></li>
-                            <li><img src="./images/work_logo_2.png" alt=""></li>
-                            <li><img src="./images/work_logo_3.png" alt=""></li>
-                            <li><img src="./images/work_logo_4.png" alt=""></li>
-                            <li><img src="./images/work_logo_5.png" alt=""></li>
-                            <li><img src="./images/work_logo_6.png" alt=""></li>
-                            <li><img src="./images/work_logo_7.png" alt=""></li>
-                            <li><img src="./images/work_logo_8.png" alt=""></li>
-                            <li><img src="./images/work_logo_9.png" alt=""></li>
-                            <li><img src="./images/work_logo_10.png" alt=""></li>
-                            <li><img src="./images/work_logo_11.png" alt=""></li>
-                            <li><img src="./images/work_logo_12.png" alt=""></li>
+                            <li><img src="./images/work_logo_1_off.png" alt="Alley Cat"></li>
+                            <li><img src="./images/work_logo_2_off.png" alt="Wai Lana"></li>
+                            <li><img src="./images/work_logo_3_off.png" alt="FIND A WAY JOSÉ !"></li>
+                            <li><img src="./images/work_logo_4_off.png" alt="FAMER"></li>
+                            <li><img src="./images/work_logo_5_off.png" alt="HOUSAR"></li>
+                            <li><img src="./images/work_logo_6_off.png"></li>
+                            <li><img src="./images/work_logo_7_off.png"></li>
+                            <li><img src="./images/work_logo_8_off.png"></li>
+                            <li><img src="./images/work_logo_9_off.png" alt="PAYMO"></li>
+                            <li><img src="./images/work_logo_10_off.png" alt="ROLLING PIZZA"></li>
+                            <li><img src="./images/work_logo_11_off.png" alt="SALUSFIN"></li>
+                            <li><img src="./images/work_logo_12_off.png" alt="Walltime."></li>
+                            <li><img src="./images/work_logo_13_off.png" alt="Pet Up"></li>
+                            <li><img src="./images/work_logo_14_off.png" alt="H Logo"></li>
+                            <li><img src="./images/work_logo_15_off.png" alt="Forbes"></li>
                         </ul>
                     </div>
                 </div>
@@ -148,7 +151,7 @@
                 <div class="inner">
                     <div class="title">
                         <h3>Our own projects</h3>
-                        <p>We love working on technology that improves people’s lives and our own projects give us <br class="box_pc">even more freedom to do this.</p>
+                        <p>We love working on technology that improves people’s lives and our own projects give us <br>even more freedom to do this.</p>
                     </div>
                 </div>
             </div>
@@ -216,7 +219,14 @@
 <script src="./js/slick.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/mobiversal.js"></script>
-<script src="./js/lightbox.js"></script>
+<script type="text/javascript">
+    (function() {
+    function a() { if (document.getElementsByTagName) { var b = document.getElementsByTagName("img"); for (var d = 0; d < b.length; d++) { var e = b[d].getAttribute("src"); if (e) { if (e.match("_off\.")) { var c = new Image();
+                        c.src = e.replace("_off\.", "_on.");
+                        b[d].onmouseover = function() { this.setAttribute("src", this.getAttribute("src").replace("_off\.", "_on.")) };
+                        b[d].onmouseout = function() { this.setAttribute("src", this.getAttribute("src").replace("_on\.", "_off.")) };
+                        b[d].onmouseup = function() { this.setAttribute("src", this.getAttribute("src").replace("_on\.", "_off.")) } } } } } } if (window.addEventListener) { window.addEventListener("load", a, false) } else { if (window.attachEvent) { window.attachEvent("onload", a) } } })();
+</script>
 </body>
 
 </html>
